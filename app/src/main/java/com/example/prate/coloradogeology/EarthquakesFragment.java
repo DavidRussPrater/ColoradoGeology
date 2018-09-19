@@ -6,14 +6,20 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,9 +33,29 @@ public class EarthquakesFragment extends Fragment {
 
     private static final String LOG_TAG = EarthquakesFragment.class.getName();
 
+    //Get today's date
+    private static final String currentDate = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
+
+
+    // Get current year as string
+    public static final String yearString = currentDate.substring(0,4);
+
+    //Convert the current year to an integer
+    public static final int yearInt = Integer.parseInt(yearString);
+
+    //Convert current the current year to the year last decade
+    public static final int decadeInt = yearInt - 10;
+
+    //Convert the current year integer back to a string
+    public static final String decadeString = Integer.toString(decadeInt);
+
+    //Replace the current year string with the year from a decade ago
+
+    public static final String finalDecadeDate = currentDate.replace(yearString, decadeString);
+
     /** URL for earthquake data from the USGS dataset */
     private static final String USGS_REQUEST_URL =
-            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2008-08-08&endtime=2018-08-08&minmagnitude=3.5&minlatitude=37&maxlatitude=41&minlongitude=-109&maxlongitude=-102";
+            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime="+ finalDecadeDate + "&endtime=" +currentDate+ "&minmagnitude=3.5&minlatitude=37&maxlatitude=41&minlongitude=-109&maxlongitude=-102";
 
     /** Adapter for the list of earthquakes */
     private EarthquakeAdapter mAdapter;
@@ -54,6 +80,14 @@ public class EarthquakesFragment extends Fragment {
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
         earthquakeListView.setAdapter(mAdapter);
+
+        //String earthQuakeUrl = matches.get(0).toString();
+        //Object adapterText = earthquakeListView.getItemAtPosition(0);
+
+
+
+
+        //Log.i("URL", );
 
         // Set an item click listener on the ListView, which sends an intent to a web browser
         // to open a website with more information about the selected earthquake.

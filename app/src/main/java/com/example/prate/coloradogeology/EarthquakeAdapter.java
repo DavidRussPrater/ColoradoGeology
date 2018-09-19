@@ -85,7 +85,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         if (originalLocation.contains(LOCATION_SEPARATOR)) {
             // Split the string into different parts (as an array of Strings)
             // based on the " of " text. We expect an array of 2 Strings, where
-            // the first String will be "5km N" and the second String will be "Cairo, Egypt".
+            // the first String will be "5km N" and the second String will be "City, Colorado".
             String[] parts = originalLocation.split(LOCATION_SEPARATOR);
             // Location offset should be "5km N " + " of " --> "5km N of"
             locationOffset = parts[0] + LOCATION_SEPARATOR;
@@ -135,15 +135,15 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         // Display the time of the current earthquake in that TextView
         timeView.setText(formattedTime);
 
-        // Set the proper background color on the magnitude circle.
+        // Set the proper background color on the magnitude Square.
         // Fetch the background from the TextView, which is a GradientDrawable.
-        GradientDrawable magnitudeCircle = (GradientDrawable) magnitudeView.getBackground();
+        GradientDrawable magnitudeSquare = (GradientDrawable) magnitudeView.getBackground();
 
         // Get the appropriate background color based on the current earthquake magnitude
         int magnitudeColor = getMagnitudeColor(currentEarthquake.getMagnitude());
 
-        // Set the color on the magnitude circle
-        magnitudeCircle.setColor(magnitudeColor);
+        // Set the color on the magnitude Square
+        magnitudeSquare.setColor(magnitudeColor);
 
         // Return the list item view that is now showing the appropriate data
         return listItemView;

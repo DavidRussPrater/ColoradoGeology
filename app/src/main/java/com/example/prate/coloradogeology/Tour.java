@@ -8,10 +8,13 @@ public class Tour {
 
     private int mActivityImageResourceId;
 
-    public Tour(int activityNameId, int activitySummaryId, int imageResourceId) {
+    private int mActivityUrl;
+
+    public Tour(int activityNameId, int activitySummaryId, int imageResourceId, int activityUrl) {
         mActivityNameId = activityNameId;
         mActivitySummaryId = activitySummaryId;
         mActivityImageResourceId = imageResourceId;
+        mActivityUrl = activityUrl;
     }
 
     public int getActivityNameId(){
@@ -24,5 +27,9 @@ public class Tour {
 
     public int getImageResourceId(){
         return mActivityImageResourceId;
+    }
+
+    public int getActivityUrl() {
+        return mActivityUrl;
     }
 }

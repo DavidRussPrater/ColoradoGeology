@@ -3,24 +3,7 @@
 
     <string name="app_label">Geology of Colorado</string>
     <string name="city_name">Boulder, Colorado</string>
-    <string name="city_summary">The city of Boulder was settled in 1858 when present day colorado
-        was still part of the Nebraska Territory. The current population of Boulder is estimated to
-        be 108,000. Boulder is one of several "mile high" cities with an elevation of 5,430 feet
-        above sea level</string>
 
-    <string name="city_summary_tab">City Summary</string>
-    <string name="outdoors">Outdoors</string>
-    <string name="restaurants">Restaurants</string>
-    <string name="shopping">Shopping</string>
-
-    <string name="hiking">Hiking</string>
-    <string name="hiking_summary">Boulder is home some of the greatest hiking in the state. Some of
-        the most popular trails are located in Chautauqua Park. Chautauqua has many different levels
-        of hiking ranging from parking and walking a few hundred feet to more rigorous treks that can
-        take hours but both lead to stunning views of nature.</string>
-
-    <string name="rock_climbing">Rock Climbing</string>
-    <string name="winter_sports">Winter Sports</string>
 
     <string name="geologic_summary_title">Geologic Summary</string>
     <string name="geologic_summary_of_colorado_title">Geologic Summary of Colorado</string>
@@ -35,19 +18,24 @@
 
     <string name="black_canyon_park">Black Canyon National Park</string>
     <string name="black_canyon_summary">The Gunnison River drops an average of 34 feet per mile (6.4 m/km) through the entire canyon, making it the 5th steepest mountain descent in North America. By comparison, the Colorado River drops an average of 7.5 feet per mile (1.42 m/km) through the Grand Canyon. The greatest descent of the Gunnison River occurs within the park at Chasm View dropping 240 feet per mile (45 m/km).[4] The Black Canyon is so named because its steepness makes it difficult for sunlight to penetrate into its depths. As a result, the canyon is often shrouded in shadow, causing the rocky walls to appear black. At its narrowest point the canyon is only 40 ft (12 m) wide at the river.</string>
+    <string name="black_canyon_url">https://www.nps.gov/blca/index.htm</string>
 
     <string name="sand_dunes_park">Great Sand Dunes National Park</string>
     <string name="sand_dunes_summary">The park contains the tallest sand dunes in North America,[7] rising to a maximum height of 750 feet (229 m)[4] from the floor of the San Luis Valley on the western base of the Sangre de Cristo Range. The dunes cover an area of about 30 sq mi (78 km2) and are estimated to contain over 5 billion cubic meters of sand.</string>
+    <string name="sand_dunes_url">https://www.nps.gov/grsa/index.htm</string>
 
     <string name="mesa_verde_park">Mesa Verde National Park</string>
     <string name="mesa_verde_summary">In the late Cretaceous Period, the Mancos Shale was deposited on top of the Dakota Sandstone, which is the rock formation that can be found under much of Colorado. The beds of the Mancos Shale are "fine-grained sand-stones, mudstones, and shales" which accumulated in the deep water of the Cretaceous Sea. It has a high clay content which causes it to expand when wet leading to sliding of the terrain. On top of this shale, there are three formations in the Mesaverde group which reflect the changes in depositional environment in the area over time. The first is the Point Lookout Sandstone, which is named for the Point Lookout feature in the park (elevation 8427 feet). This sandstone, which formed in the marine environment of shallow water when the Cretaceous sea was receding, is "massive, fine-grained, cross-bedded, and very resistant", in its layers reflecting waves and currents that were present during the time of its formation. Its sediments are approximately 400 feet thick, and its upper layers feature fossiliferous invertebrates.</string>
+    <string name="mesa_verde_url">https://www.nps.gov/meve/index.htm</string>
 
     <string name="rocky_mountain_park">Rocky Mountain National Park</string>
     <string name="rocky_mountain_summary">Precambrian metamorphic rock formed the core of the North American continent during the Precambrian eon 4.5–1 billion years ago. During the Paleozoic era, western North America was submerged beneath a shallow sea, with a seabed composed of limestone and dolomite deposits many kilometers thick.[54] Pikes Peak granite formed during the late Precambrian eon, continuing well into the Paleozoic era, when mass quantities of molten rock flowed, amalgamated, and formed the continents about 1 billion–300 million years ago. Concurrently, in the period from 500–300 million years ago, the region began to sink while lime and mud sediments were deposited in the vacated space. Eroded granite produced sand particles that formed strata—layers of sediment—in the sinking basin</string>
+    <string name="rocky_mountain_url">https://www.nps.gov/romo/index.htm</string>
 
     <string name="fossils_title">Fossils</string>
     <string name="dinosaur_ridge">Dinosaur Ridge</string>
     <string name="dinosaur_ridge_fossils_summary">Dinosaur Ridge area is one of the world\'s most famous dinosaur fossil localities. In 1877, some of the best-known dinosaurs were found here, including Stegosaurus, Apatosaurus, Diplodocus, and Allosaurus. There are also many trace fossils of therapods located here. </string>
+    <string name="dinosaur_ridge_url"></string>
 
     <string name="cañon_city">Cañon City Fossils</string>
     <string name="cañon_city_fossils_summary">Fossils of well-known species of large dinosaurs have been discovered at this site over the last 120 years. Many of the dinosaur fossils discovered at this site are on exhibit at museums around the country, including the Denver Museum of Natural History, and the Smithsonian Institution\'s Museum of Natural History in Washington, D.C. Fossils of two-legged, plant-eating dinosaurs, dinosaur eggs, and dinosaur tracks have also been discovered in the Garden Park Fossil Area. This area is also home to some of the most unique trace fossils because you can see the fossils from underneath the surface unlike most trace fossils you see which are on the surface.</string>
