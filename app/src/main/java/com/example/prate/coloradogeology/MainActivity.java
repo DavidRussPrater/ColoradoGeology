@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
+        //Set the title of the app to Colorado Geology instead of Geology of Colorado
         this.setTitle(getResources().getString(R.string.app_label));
 
         // Find the view pager that will allow the user to swipe between fragments

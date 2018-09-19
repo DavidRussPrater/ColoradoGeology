@@ -65,14 +65,10 @@ public class EarthquakesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.earthquake_list, container, false);
 
-        // Get the list of earthquakes from {@link QueryUtils}
-        //ArrayList<Earthquake> earthquakes = QueryUtils.extractEarthquakes();
+
 
         // Find a reference to the {@link ListView} in the layout
        ListView earthquakeListView = (ListView) rootView.findViewById(R.id.earthquake_list);
-
-        // Create a new adapter that takes the list of earthquakes as input
-       // final EarthquakeAdapter adapter = new EarthquakeAdapter(getActivity(), earthquakes);
 
         // Create a new adapter that takes an empty list of earthquakes as input
         mAdapter = new EarthquakeAdapter(getActivity(), new ArrayList<Earthquake>());
@@ -80,14 +76,6 @@ public class EarthquakesFragment extends Fragment {
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
         earthquakeListView.setAdapter(mAdapter);
-
-        //String earthQuakeUrl = matches.get(0).toString();
-        //Object adapterText = earthquakeListView.getItemAtPosition(0);
-
-
-
-
-        //Log.i("URL", );
 
         // Set an item click listener on the ListView, which sends an intent to a web browser
         // to open a website with more information about the selected earthquake.

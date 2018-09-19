@@ -31,8 +31,6 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
      */
     private static final String LOCATION_SEPARATOR = " of ";
     private static final String STATE_ONLY = "Colorado";
-    private static final int greaterColoradoArea = R.string.greater_colorado_area;
-    private static final int epicenterUnknown = R.string.epicenter_unknown;
 
     /**
      * Constructs a new {@link EarthquakeAdapter}.
@@ -71,11 +69,11 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
 
         // Get the original location string from the Earthquake object,
-        // which can be in the format of "5km N of Cairo, Egypt" or "Pacific-Antarctic Ridge".
+        // which can be in the format of "5km N of Denver, Colorado" or "Pacific-Antarctic Ridge".
         String originalLocation = currentEarthquake.getLocation();
 
-        // If the original location string (i.e. "5km N of Cairo, Egypt") contains
-        // a primary location (Cairo, Egypt) and a location offset (5km N of that city)
+        // If the original location string (i.e. "5km N of Denver, Colorado") contains
+        // a primary location (Denver, Colorado) and a location offset (5km N of that city)
         // then store the primary location separately from the location offset in 2 Strings,
         // so they can be displayed in 2 TextViews.
         String primaryLocation;

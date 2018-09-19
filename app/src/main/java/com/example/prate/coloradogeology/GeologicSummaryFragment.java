@@ -28,7 +28,7 @@ public class GeologicSummaryFragment extends Fragment {
 
         final ArrayList<Tour> tours = new ArrayList<>();
 
-        tours.add(new Tour(R.string.geologic_summary_of_colorado_title, R.string.geologic_summary, R.drawable.boulderbearpeak, R.string.mesa_verde_url));
+        tours.add(new Tour(R.string.geologic_summary_of_colorado_title, R.string.geologic_summary, R.drawable.boulderbearpeak));
 
         TourAdapter adapter = new TourAdapter(getActivity(), tours);
 

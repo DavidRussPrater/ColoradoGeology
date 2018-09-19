@@ -29,21 +29,16 @@ public class MainActivityUITest{
     public ActivityTestRule<MainActivity> mActivityTestRule =
             new ActivityTestRule<>(MainActivity.class);
 
-   // @Rule
- //   public IntentsTestRule<MainActivity> intentsTestRule =
-//            new IntentsTestRule<>(MainActivity.class);
 
     @Test
     public void clickOnNationalParksTab(){
         onView(withText("National Parks")).perform(click());
-        //onView(withText("Geologic Summary")).perform(click());
     }
 
     @Test
     public void clickOnFossilsTab(){
         onView(withId(R.id.tabs)).perform(swipeLeft());
         onView(withText("Fossils")).perform(click());
-        //onView(withText("Geologic Summary")).perform(click());
     }
 
     @Test
