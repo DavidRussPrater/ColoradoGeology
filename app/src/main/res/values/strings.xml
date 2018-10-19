@@ -35,7 +35,7 @@
     <string name="fossils_title">Fossils</string>
     <string name="dinosaur_ridge">Dinosaur Ridge</string>
     <string name="dinosaur_ridge_fossils_summary">Dinosaur Ridge area is one of the world\'s most famous dinosaur fossil localities. In 1877, some of the best-known dinosaurs were found here, including Stegosaurus, Apatosaurus, Diplodocus, and Allosaurus. There are also many trace fossils of therapods located here. </string>
-    <string name="dinosaur_ridge_url"></string>
+    <string name="dinosaur_ridge_url">placeholder</string>
 
     <string name="cañon_city">Cañon City Fossils</string>
     <string name="cañon_city_fossils_summary">Fossils of well-known species of large dinosaurs have been discovered at this site over the last 120 years. Many of the dinosaur fossils discovered at this site are on exhibit at museums around the country, including the Denver Museum of Natural History, and the Smithsonian Institution\'s Museum of Natural History in Washington, D.C. Fossils of two-legged, plant-eating dinosaurs, dinosaur eggs, and dinosaur tracks have also been discovered in the Garden Park Fossil Area. This area is also home to some of the most unique trace fossils because you can see the fossils from underneath the surface unlike most trace fossils you see which are on the surface.</string>
@@ -46,6 +46,9 @@
 
     <string name="greater_colorado_area">Greater Colorado Area</string>
     <string name="epicenter_unknown">Exact Epicenter Unknown</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps_fragment">Map</string>
 
 
 </resources>

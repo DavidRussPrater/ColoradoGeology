@@ -22,7 +22,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 /**
  * {@link CategoryAdapter} is a {@link FragmentPagerAdapter} that can provide the layout for
- * each list item based on a data source which is a list of {@link Word} objects.
+ * each list item based on a data source which is a list of {@link Earthquake} objects.
  */
 public class CategoryAdapter extends FragmentPagerAdapter {
 
@@ -52,8 +52,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return new NationalParksFragment();
         } else if (position == 2) {
             return new FossilsFragment();
-        } else {
+        } else if (position == 3){
             return new EarthquakesFragment();
+        } else {
+            return new MapsFragment();
         }
     }
 
@@ -62,7 +64,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 4;
+        return 5;
     }
 
     @Override
@@ -73,8 +75,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             return mContext.getString(R.string.national_parks);
         } else if (position ==2) {
             return mContext.getString(R.string.fossils_title);
-        } else {
+        } else if (position == 3){
             return mContext.getString(R.string.earthquakes);
+        } else {
+            return "maps";
         }
     }
 }

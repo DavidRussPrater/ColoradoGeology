@@ -1,10 +1,12 @@
 package com.example.prate.coloradogeology;
+
 import android.text.TextUtils;
 import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,13 +21,13 @@ import java.util.List;
  * Helper methods related to requesting and receiving earthquake data from USGS.
  */
 public final class QueryUtils {
-    /** Sample JSON response for a USGS query */
+
     /** Tag for the log messages */
     private static final String LOG_TAG = QueryUtils.class.getSimpleName();
     /**
-     * Create a private constructor because no one should ever create a {@link QueryUtils} object.
-     @@ -48,22 +49,123 @@ * This class is only meant to hold static variables and methods, which can be accessed
-      * directly from the class name QueryUtils (and an object instance of QueryUtils is not needed).
+     * Create a private constructor
+     * This class is only meant to hold static variables and methods, which can be accessed
+     * directly from the class name QueryUtils (and an object instance of QueryUtils is not needed).
      */
     private QueryUtils() {
     }

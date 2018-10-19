@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -36,7 +33,6 @@ public class EarthquakesFragment extends Fragment {
     //Get today's date
     private static final String currentDate = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date());
 
-
     // Get current year as string
     public static final String yearString = currentDate.substring(0,4);
 
@@ -50,7 +46,6 @@ public class EarthquakesFragment extends Fragment {
     public static final String decadeString = Integer.toString(decadeInt);
 
     //Replace the current year string with the year from a decade ago
-
     public static final String finalDecadeDate = currentDate.replace(yearString, decadeString);
 
     /** URL for earthquake data from the USGS dataset */
