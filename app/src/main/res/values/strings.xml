@@ -50,5 +50,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps_fragment">Map</string>
 
+    <string name="map">Map</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="flag_header">This image fills the header with the Colorado flag </string>
+
 
 </resources>
