@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class NationalParksPageAdapter extends FragmentPagerAdapter {
-    //private static final String TAG = CustomFragmentPageAdapter.class.getSimpleName();
+
     private static final int FRAGMENT_COUNT = 2;
     public NationalParksPageAdapter(FragmentManager fm) {
         super(fm);
@@ -16,7 +16,7 @@ public class NationalParksPageAdapter extends FragmentPagerAdapter {
             case 0:
                 return new NationalParksFragment();
             case 1:
-                return new MapsFragment();
+                return new NationalParksMapsFragment();
         }
         return null;
     }

@@ -13,10 +13,13 @@ public class NationalParksTabsFragment extends Fragment {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     public NationalParksTabsFragment() {
+        // Required empty public constructor
     }
 
+    /**
+     Set up a ViewPager and tab layout to handle the Earthquakes tabs
+     */
     @Override
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.national_parks_tabs, container, false);
         tabLayout = (TabLayout)view.findViewById(R.id.tabs);

@@ -9,14 +9,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class EarthquakeTabsFragment extends Fragment {
-    private static final String TAG = EarthquakeTabsFragment.class.getSimpleName();
+
     private TabLayout tabLayout;
     private ViewPager viewPager;
+
     public EarthquakeTabsFragment() {
+        // Required empty public constructor
     }
 
+    /**
+      Set up a ViewPager and tab layout to handle the Earthquakes tabs
+     */
     @Override
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.earthquake_tabs, container, false);
         tabLayout = (TabLayout)view.findViewById(R.id.tabs);

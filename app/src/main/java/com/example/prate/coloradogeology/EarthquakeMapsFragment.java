@@ -46,24 +46,31 @@ public class EarthquakeMapsFragment extends SupportMapFragment implements OnMapR
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        // Define the Long and Lat of Colorado and move the camera here
         LatLng colorado = new LatLng(39.5501, -105.7821);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(colorado));
+
+        // This for loop displays the fifteen most recent earthquakes in Colorado
         for (int i = 0; i < 15; i++) {
 
-
-           // System.out.println("Lat: " + latitudeArray[i] + " Long: " + longitudeArray[i]);
-
+            // Get the string value for the earthquakes longitude at index i and convert it from a String
+            // to a double to display on the map
             String finalLongitudeString = longitudeArray[i];
             double longitudeDouble = Double.parseDouble(finalLongitudeString);
 
+            // Get the string value for the earthquakes latitude at index i and convert it from a String
+            // to a double to display on the map
             String finalLatitudeString = latitudeArray[i];
             double latitudeDouble = Double.parseDouble(finalLatitudeString);
 
+            // Add the corresponding Lat and Long values to the and set the title of the pin to
+            // "Location : Magnitude" and add them to the map
             LatLng earthquake = new LatLng(latitudeDouble, longitudeDouble);
             mMap.addMarker(new MarkerOptions().position(earthquake).title(locationArray[i] + " Magnitude: " + magnitudeArray[i]));
 
         }
 
+        // Make the camera zoom in to show the full state of Colorado
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(colorado, 6), 2000, null);
 
 

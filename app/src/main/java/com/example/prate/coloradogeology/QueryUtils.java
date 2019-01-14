@@ -32,15 +32,18 @@ public final class QueryUtils {
     private QueryUtils() {
     }
 
+    // Initialized arrays to store the latitude, longitude, depth, magnitude, and location of the 15 most
+    // recent earthquakes
     public static String latitudeArray[] = new String[50];
     public static String longitudeArray[] = new String[50];
     public static String depthArray[] = new String[50];
-    public static String coordinatesArray[] = new String[50];
-
-
     public static String locationArray[] = new String[50];
     public static double magnitudeArray[] = new double[50];
 
+    // Initialized an array to store the coordinates of the 15 most recent earthquakes
+    public static String coordinatesArray[] = new String[50];
+
+    // Initialized Strings to store the values for latitude, longitude, and depth
     public static String latitude;
     public static String longitude;
     public static String depth;
@@ -187,19 +190,23 @@ public final class QueryUtils {
                 // Extract the value for the key called "url"
                 String url = properties.getString("url");
 
+                // Split the coordinates value at the "," to store each value individually
                 coordinatesArray =  coordinates.split(",");
 
+                // Assigned the longitude, latitude, and depth to their respective values in the
+                // coordinates array
                 longitude = coordinatesArray[0];
                 latitude = coordinatesArray[1];
                 depth = coordinatesArray[2];
 
+                // Removed the first character of the coordinates array because the JSON response
+                // starts with a "["  i.e. [-102.684,38.47,5] turns to  -102.684,38.47,5]
                 longitudeArray[i] = longitude.substring(1);
+
+                // Set the values for each earthquakes latitude, depth, location, and magnitude to
+                // their corresponding arrays
                 latitudeArray[i] = latitude;
                 depthArray[i] = depth;
-
-                System.out.println("Lat: " + latitudeArray[i] + " Long: " + longitudeArray[i]);
-
-
                 locationArray[i] = location;
                 magnitudeArray[i] = magnitude;
 

@@ -5,6 +5,7 @@
     <string name="city_name">Boulder, Colorado</string>
 
 
+    <!-- Geologic Summary Strings -->
     <string name="geologic_summary_title">Geologic Summary</string>
     <string name="geologic_summary_of_colorado_title">Geologic Summary of Colorado</string>
     <string name="geologic_summary">\t\tThe first major geologic event that created the source rock for the modern day Rocky Mountains was the Ancestral Rocky Mountains. Although the Ancestral Rocky Mountains are no longer present in Colorado it is still important to study them because its remnants formed the Fountain Formation other sedimentary formations. The only formation predating the Ancestral Rockies in Colorado is the Precambrian Basements. The Precambrian Basement we studied was found in many different places but the three most prominent sites were in Grape Creek, The Wet Mountains, and Lake Agnes. At Grape Creek, we mapped the contact between the Precambrian and Phanerozoic. At Grape Creek we were able to see the Ralston and the Fountain formation side by side. Upon inspecting the two-different sedimentary conglomerate’s we concluded that the source rock for these formations was Precambrian Basement rock. Both at Grape Creek and Lake Agnes, we saw the Precambrian Basement above rocks of younger rock layers. The reason these formations are above formations of younger ages is due to reverse faulting.\n
@@ -16,49 +17,55 @@
 
     <string name="national_parks">National Parks</string>
 
+    <!-- Black Canyon Strings -->
     <string name="black_canyon_park">Black Canyon National Park</string>
     <string name="black_canyon_summary">The Gunnison River drops an average of 34 feet per mile (6.4 m/km) through the entire canyon, making it the 5th steepest mountain descent in North America. By comparison, the Colorado River drops an average of 7.5 feet per mile (1.42 m/km) through the Grand Canyon. The greatest descent of the Gunnison River occurs within the park at Chasm View dropping 240 feet per mile (45 m/km).[4] The Black Canyon is so named because its steepness makes it difficult for sunlight to penetrate into its depths. As a result, the canyon is often shrouded in shadow, causing the rocky walls to appear black. At its narrowest point the canyon is only 40 ft (12 m) wide at the river.</string>
     <string name="black_canyon_url">https://www.nps.gov/blca/index.htm</string>
 
+    <!-- Sand Dunes Strings-->
     <string name="sand_dunes_park">Great Sand Dunes National Park</string>
     <string name="sand_dunes_summary">The park contains the tallest sand dunes in North America,[7] rising to a maximum height of 750 feet (229 m)[4] from the floor of the San Luis Valley on the western base of the Sangre de Cristo Range. The dunes cover an area of about 30 sq mi (78 km2) and are estimated to contain over 5 billion cubic meters of sand.</string>
     <string name="sand_dunes_url">https://www.nps.gov/grsa/index.htm</string>
 
+    <!-- Mesa Verde Strings -->
     <string name="mesa_verde_park">Mesa Verde National Park</string>
     <string name="mesa_verde_summary">In the late Cretaceous Period, the Mancos Shale was deposited on top of the Dakota Sandstone, which is the rock formation that can be found under much of Colorado. The beds of the Mancos Shale are "fine-grained sand-stones, mudstones, and shales" which accumulated in the deep water of the Cretaceous Sea. It has a high clay content which causes it to expand when wet leading to sliding of the terrain. On top of this shale, there are three formations in the Mesaverde group which reflect the changes in depositional environment in the area over time. The first is the Point Lookout Sandstone, which is named for the Point Lookout feature in the park (elevation 8427 feet). This sandstone, which formed in the marine environment of shallow water when the Cretaceous sea was receding, is "massive, fine-grained, cross-bedded, and very resistant", in its layers reflecting waves and currents that were present during the time of its formation. Its sediments are approximately 400 feet thick, and its upper layers feature fossiliferous invertebrates.</string>
     <string name="mesa_verde_url">https://www.nps.gov/meve/index.htm</string>
 
+    <!-- Rocky Mountain Strings -->
     <string name="rocky_mountain_park">Rocky Mountain National Park</string>
     <string name="rocky_mountain_summary">Precambrian metamorphic rock formed the core of the North American continent during the Precambrian eon 4.5–1 billion years ago. During the Paleozoic era, western North America was submerged beneath a shallow sea, with a seabed composed of limestone and dolomite deposits many kilometers thick.[54] Pikes Peak granite formed during the late Precambrian eon, continuing well into the Paleozoic era, when mass quantities of molten rock flowed, amalgamated, and formed the continents about 1 billion–300 million years ago. Concurrently, in the period from 500–300 million years ago, the region began to sink while lime and mud sediments were deposited in the vacated space. Eroded granite produced sand particles that formed strata—layers of sediment—in the sinking basin</string>
     <string name="rocky_mountain_url">https://www.nps.gov/romo/index.htm</string>
 
+    <!-- Dinosaur Ridge Strings -->
     <string name="fossils_title">Fossils</string>
     <string name="dinosaur_ridge">Dinosaur Ridge</string>
     <string name="dinosaur_ridge_fossils_summary">Dinosaur Ridge area is one of the world\'s most famous dinosaur fossil localities. In 1877, some of the best-known dinosaurs were found here, including Stegosaurus, Apatosaurus, Diplodocus, and Allosaurus. There are also many trace fossils of therapods located here. </string>
     <string name="dinosaur_ridge_url">placeholder</string>
 
+    <!-- Cañon city strings-->
     <string name="cañon_city">Cañon City Fossils</string>
     <string name="cañon_city_fossils_summary">Fossils of well-known species of large dinosaurs have been discovered at this site over the last 120 years. Many of the dinosaur fossils discovered at this site are on exhibit at museums around the country, including the Denver Museum of Natural History, and the Smithsonian Institution\'s Museum of Natural History in Washington, D.C. Fossils of two-legged, plant-eating dinosaurs, dinosaur eggs, and dinosaur tracks have also been discovered in the Garden Park Fossil Area. This area is also home to some of the most unique trace fossils because you can see the fossils from underneath the surface unlike most trace fossils you see which are on the surface.</string>
 
-
+    <!-- Strings for creating location of earthquakes-->
     <string name="earthquakes">Earthquakes</string>
     <string name="near_the">Near the</string>
-
     <string name="greater_colorado_area">Greater Colorado Area</string>
     <string name="epicenter_unknown">Exact Epicenter Unknown</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings for the map fragments-->
     <string name="title_activity_maps_fragment">Map</string>
-
     <string name="map">Map</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-
-    <string name="flag_header">This image fills the header with the Colorado flag </string>
     <string name="title_activity_map_tab">MapTab</string>
+    <string name="earthquake_map">Earthquakes Map</string>
+
+    <!-- Miscellaneous Stings-->
+    <string name="flag_header">This image fills the header with the Colorado flag </string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
-    <string name="earthquake_map">Earthquakes Map</string>
+
 
 </resources>
