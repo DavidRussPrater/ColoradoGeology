@@ -32,6 +32,19 @@ public final class QueryUtils {
     private QueryUtils() {
     }
 
+    public static String latitudeArray[] = new String[50];
+    public static String longitudeArray[] = new String[50];
+    public static String depthArray[] = new String[50];
+    public static String coordinatesArray[] = new String[50];
+
+
+    public static String locationArray[] = new String[50];
+    public static double magnitudeArray[] = new double[50];
+
+    public static String latitude;
+    public static String longitude;
+    public static String depth;
+
     /**
      * Query the USGS dataset and return a list of {@link Earthquake} objects.
      */
@@ -153,6 +166,11 @@ public final class QueryUtils {
                 // for that earthquake.
                 JSONObject properties = currentEarthquake.getJSONObject("properties");
 
+
+                //JSONArray geometryArray = currentEarthquake.getJSONArray("geometry");
+                JSONObject coordinatesObject = currentEarthquake.getJSONObject("geometry");
+
+
                 // Extract the value for the key called "mag"
                 double magnitude = properties.getDouble("mag");
 
@@ -162,12 +180,31 @@ public final class QueryUtils {
                 // Extract the value for the key called "time"
                 long time = properties.getLong("time");
 
+                // Extract the values for the key "coordinates"
+                String coordinates = coordinatesObject.getString("coordinates");
+
+                coordinates.substring(1);
                 // Extract the value for the key called "url"
                 String url = properties.getString("url");
 
+                coordinatesArray =  coordinates.split(",");
+
+                longitude = coordinatesArray[0];
+                latitude = coordinatesArray[1];
+                depth = coordinatesArray[2];
+
+                longitudeArray[i] = longitude.substring(1);
+                latitudeArray[i] = latitude;
+                depthArray[i] = depth;
+
+                System.out.println("Lat: " + latitudeArray[i] + " Long: " + longitudeArray[i]);
+
+                locationArray[i] = location;
+                magnitudeArray[i] = magnitude;
+
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.
-                Earthquake earthquake = new Earthquake(magnitude, location, time, url);
+                Earthquake earthquake = new Earthquake(magnitude, location, time, url, coordinates);
 
                 // Add the new {@link Earthquake} to the list of earthquakes.
                 earthquakes.add(earthquake);

@@ -11,7 +11,5 @@
         android:title="@string/fossils_title"/>
     <item android:id="@+id/earthquake_menu"
         android:title="@string/earthquakes"/>
-    <item android:id="@+id/maps_menu"
-        android:title="@string/map"/>
     </group>
 </menu>

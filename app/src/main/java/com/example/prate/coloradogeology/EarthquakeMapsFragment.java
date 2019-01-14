@@ -9,11 +9,16 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsFragment extends SupportMapFragment implements OnMapReadyCallback  {
+import static com.example.prate.coloradogeology.QueryUtils.latitudeArray;
+import static com.example.prate.coloradogeology.QueryUtils.locationArray;
+import static com.example.prate.coloradogeology.QueryUtils.longitudeArray;
+import static com.example.prate.coloradogeology.QueryUtils.magnitudeArray;
+
+public class EarthquakeMapsFragment extends SupportMapFragment implements OnMapReadyCallback  {
 
     private GoogleMap mMap;
 
-    public MapsFragment() {
+    public EarthquakeMapsFragment() {
         // Required empty public constructor
     }
 
@@ -41,24 +46,26 @@ public class MapsFragment extends SupportMapFragment implements OnMapReadyCallba
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-
-        // Add markers for each national park in Colorado
         LatLng colorado = new LatLng(39.5501, -105.7821);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(colorado));
-        LatLng rockyMountainNP = new LatLng(40.3428, -105.6836);
-        LatLng greatSandDunesNP = new LatLng(37.7916, -105.5943);
-        LatLng blackCanyonNP = new LatLng(38.5754, -107.7416);
-        LatLng mesaVerdeNP = new LatLng(37.2309, -108.4618);
-        LatLng dinosaurRidgeFossils = new LatLng(39.6942, -105.2000);
-        LatLng canonCityFossils = new LatLng(38.4494, -105.2253);
-        mMap.addMarker(new MarkerOptions().position(rockyMountainNP).title("Rocky Mountain National Park"));
-        mMap.addMarker(new MarkerOptions().position(greatSandDunesNP).title("Great Sand Dunes National Park"));
-        mMap.addMarker(new MarkerOptions().position(blackCanyonNP).title("Black Canyon National Park"));
-        mMap.addMarker(new MarkerOptions().position(mesaVerdeNP).title("Mesa Verde National Park"));
-        mMap.addMarker(new MarkerOptions().position(dinosaurRidgeFossils).title("Dinosaur Ridge"));
-        mMap.addMarker(new MarkerOptions().position(canonCityFossils).title("Cañon City Fossils"));
-        mMap.addMarker(new MarkerOptions().position(colorado).title("Marker in Colorado"));
+        for (int i = 0; i < 15; i++) {
+
+
+           // System.out.println("Lat: " + latitudeArray[i] + " Long: " + longitudeArray[i]);
+
+            String finalLongitudeString = longitudeArray[i];
+            double longitudeDouble = Double.parseDouble(finalLongitudeString);
+
+            String finalLatitudeString = latitudeArray[i];
+            double latitudeDouble = Double.parseDouble(finalLatitudeString);
+
+            LatLng earthquake = new LatLng(latitudeDouble, longitudeDouble);
+            mMap.addMarker(new MarkerOptions().position(earthquake).title(locationArray[i] + " Magnitude: " + magnitudeArray[i]));
+
+        }
+
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(colorado, 6), 2000, null);
+
 
     }
 }

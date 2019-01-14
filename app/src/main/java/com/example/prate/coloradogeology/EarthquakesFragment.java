@@ -138,7 +138,7 @@ public class EarthquakesFragment extends Fragment {
         @Override
         protected void onPostExecute(List<Earthquake> data) {
             // Clear the adapter of previous earthquake data
-            mAdapter.clear();
+            mAdapter .clear();
             // If there is a valid list of {@link Earthquake}s, then add them to the adapter's
             // data set. This will trigger the ListView to update.
             if (data != null && !data.isEmpty()) {

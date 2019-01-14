@@ -17,7 +17,6 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout dl;
-//
    private ActionBarDrawerToggle t;
     private NavigationView nvDrawer;
     private Toolbar toolbar;
@@ -80,19 +79,15 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = GeologicSummaryFragment.class;
                 break;
             case R.id.national_parks_menu:
-                fragmentClass = NationalParksFragment.class;
+                fragmentClass = NationalParksTabsFragment.class;
                 break;
             case R.id.fossils_menu:
                 fragmentClass = FossilsFragment.class;
                 break;
-            case R.id.earthquake_menu:
-                fragmentClass = EarthquakesFragment.class;
-                break;
-            case R.id.maps_menu:
-                fragmentClass = MapsFragment.class;
-                break;
             default:
-                fragmentClass = GeologicSummaryFragment.class;
+                fragmentClass = EarthquakeTabsFragment.class;
+                break;
+
         }
 
         try {
