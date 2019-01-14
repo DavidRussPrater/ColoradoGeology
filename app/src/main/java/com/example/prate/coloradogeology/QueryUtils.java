@@ -199,7 +199,7 @@ public final class QueryUtils {
 
                 System.out.println("Lat: " + latitudeArray[i] + " Long: " + longitudeArray[i]);
 
-                
+
                 locationArray[i] = location;
                 magnitudeArray[i] = magnitude;
 
