@@ -119,6 +119,11 @@ public class EarthquakesFragment extends Fragment {
          * We should not update the UI from a background thread, so we return a list of
          * {@link Earthquake}s as the result.
          */
+
+       // public AsyncResponse delegate = null;
+
+
+
         @Override
         protected List<Earthquake> doInBackground(String... urls) {
             // Don't perform the request if there are no URLs, or the first URL is null
@@ -144,6 +149,9 @@ public class EarthquakesFragment extends Fragment {
             if (data != null && !data.isEmpty()) {
                 mAdapter.addAll(data);
             }
+
+
+            //delegate.finish();
         }
     }
 }

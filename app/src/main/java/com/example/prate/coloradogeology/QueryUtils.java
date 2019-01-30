@@ -193,8 +193,10 @@ public final class QueryUtils {
                 // Split the coordinates value at the "," to store each value individually
                 coordinatesArray =  coordinates.split(",");
 
+
                 // Assigned the longitude, latitude, and depth to their respective values in the
                 // coordinates array
+                Log.i("Coordinates: ", coordinates);
                 longitude = coordinatesArray[0];
                 latitude = coordinatesArray[1];
                 depth = coordinatesArray[2];
@@ -209,6 +211,8 @@ public final class QueryUtils {
                 depthArray[i] = depth;
                 locationArray[i] = location;
                 magnitudeArray[i] = magnitude;
+
+
 
                 // Create a new {@link Earthquake} object with the magnitude, location, time,
                 // and url from the JSON response.

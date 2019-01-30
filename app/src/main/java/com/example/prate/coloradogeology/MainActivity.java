@@ -17,7 +17,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout dl;
-   private ActionBarDrawerToggle t;
+    private ActionBarDrawerToggle t;
     private NavigationView nvDrawer;
     private Toolbar toolbar;
     private ActionBarDrawerToggle drawerToggle;
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         nvDrawer = findViewById(R.id.nvView);
         // Setup drawer view
         setupDrawerContent(nvDrawer);
+
 
 
     }

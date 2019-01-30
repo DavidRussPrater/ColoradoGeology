@@ -75,7 +75,6 @@ public class EarthquakeMapsFragment extends SupportMapFragment implements OnMapR
 
         try {
             Thread.sleep(600);
-            System.out.print("Sleeping");
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -86,7 +85,6 @@ public class EarthquakeMapsFragment extends SupportMapFragment implements OnMapR
             // Get the string value for the earthquakes longitude at index i and convert it from a String
             // to a double to display on the map
             String finalLongitudeString = longitudeArray[i];
-            System.out.println("Coordinates: " + finalLongitudeString);
             double longitudeDouble = Double.parseDouble(finalLongitudeString);
 
             // Get the string value for the earthquakes latitude at index i and convert it from a String
